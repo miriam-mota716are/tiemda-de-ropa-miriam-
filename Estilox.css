@@ -1,0 +1,19 @@
+:root{
+    --titulos: red;
+    --subtitulos:   yellow;
+    --parrafos: blue;
+    --borde: 2px solid  green;
+}
+h1{
+    color: red;
+    color: var(--titulos, green);
+}
+h2{
+    color: green;
+    color: var(--subtitulos, yellow);
+}
+p{
+    border: var(--borde);
+    color: green;
+    color: var(--parrafos, yellow);
+}
